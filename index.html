@@ -2,82 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey-mission</title>
-    <!-- daisy UI css -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/2e1a639c46.js" crossorigin="anonymous"></script>
-    <!-- customize css -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'hockey-primary': '#FF4240',
-                        'hockey-secondary': '#424247',
-                       
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey-mission</title>
+  <!-- daisy UI css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/2e1a639c46.js" crossorigin="anonymous"></script>
+  <!-- customize css -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+            'hockey-secondary': '#424247',
+
+          }
         }
-    </script>
-    <style>
-        .font-manrope{
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
-        <!-- nav bar -->
-        <section>
-            <div class="navbar">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a><span class="text-hockey-primary font-bold">Home</span></a></li>
-                        <li><a><span class="text-hockey-secondary">About</span></a></li>
-                        <li><a><span class="text-hockey-secondary">Page</span></a></li>
-                        <li><a><span class="text-hockey-secondary">Blog</span></a></li>
-                        <li><a><span class="text-hockey-secondary">Contact</span></a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl md:text-4xl font-extrabold">Hockey<span class="text-hockey-primary">’</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a><span class="text-hockey-primary font-bold">Home</span></a></li>
-                    <li><a><span class="text-hockey-secondary">About</span></a></li>
-                    <li><a><span class="text-hockey-secondary">Page</span></a></li>
-                    <li><a><span class="text-hockey-secondary">Blog</span></a></li>
-                    <li><a><span class="text-hockey-secondary">Contact</span></a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
-                  <a class="btn bg-hockey-primary text-white text-lg md:text-xl font-semibold ml-6">Get Ticket</a>
-                </div>
+  <header class="container mx-auto">
+    <!-- nav bar -->
+    <section>
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a><span class="text-hockey-primary font-bold">Home</span></a></li>
+              <li><a><span class="text-hockey-secondary">About</span></a></li>
+              <li><a><span class="text-hockey-secondary">Page</span></a></li>
+              <li><a><span class="text-hockey-secondary">Blog</span></a></li>
+              <li><a><span class="text-hockey-secondary">Contact</span></a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl md:text-4xl font-extrabold">Hockey<span
+              class="text-hockey-primary">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a><span class="text-hockey-primary font-bold">Home</span></a></li>
+            <li><a><span class="text-hockey-secondary">About</span></a></li>
+            <li><a><span class="text-hockey-secondary">Page</span></a></li>
+            <li><a><span class="text-hockey-secondary">Blog</span></a></li>
+            <li><a><span class="text-hockey-secondary">Contact</span></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
+          <a class="btn bg-hockey-primary text-white text-lg md:text-xl font-semibold ml-6">Get Ticket</a>
+        </div>
+      </div>
+    </section>
+    <!-- banner section-->
+    <section class="mt-6 md:mt-12">
+        <div class="carousel w-full lg:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+    
+              <img src="Images/1.png" class="w-full " />
+              <div class="bg-black p-8 absolute top-60 md:top-auto md:bottom-8 md:right-8 rounded-xl md:w-[40%]">
+                <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                  turpis placerat dolor. Purus urna in sit nullam proin. </p>
               </div>
-        </section>
-    </header>
-    <main>
+        
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.jpg" class="w-full rounded-xl" />
+            <div class="bg-black p-8 absolute top-60 md:top-auto md:bottom-8 md:right-8 rounded-xl md:w-[40%]">
+              <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+              <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="bg-black p-8 relative z-20">
+              <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+              <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div> -->
+    </section>
+  </header>
+  <main>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
